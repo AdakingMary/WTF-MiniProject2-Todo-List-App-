@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaizen Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kaizen Todo List</h1>
+
+      <p id="welcomeMsg"></p>
+
+      <!-- Creating a Todo Form -->
+      <form id="todoForm">
+        <input type="text" id="todoTitle" placeholder="Task Title" required />
+        <textarea
+          id="todoDescription"
+          placeholder="Description (optional)"
+        ></textarea>
+        <input type="datetime-local" id="todoDueDate" required />
+
+        <button type="submit">Add Task</button>
+      </form>
+
+      <h2>Your Tasks</h2>
+      <div id="todoList"></div>
+
+      <button id="logoutBtn" style="margin-bottom: 20px">Logout</button>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

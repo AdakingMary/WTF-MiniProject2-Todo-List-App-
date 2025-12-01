@@ -1,0 +1,230 @@
+.reg-container {
+  background: pink;
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 7px;
+  box-shadow: 0, 2px, 8px, 2px;
+  text-align: center;
+}
+
+.reg-container h1 {
+  margin-bottom: 20px;
+}
+
+.reg-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reg-container input,
+.reg-container button {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.reg-container button {
+  background: lightblue;
+  color: white;
+  border: none;
+}
+.reg-container button:hover {
+  background: tomato;
+}
+
+/* Styling Kaizen Todo List Interface */
+/* ------------------------------
+  GENERAL STYLING
+------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ------------------------------
+  HEADINGS
+------------------------------ */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* ------------------------------
+  WELCOME MESSAGE & LOGOUT
+------------------------------ */
+#welcomeMsg {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#logoutBtn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: #e60000;
+}
+
+/* ------------------------------
+  TODO FORM
+------------------------------ */
+form#todoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* ------------------------------
+  TODO LIST
+------------------------------ */
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: #f9f9f9;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item button {
+  width: fit-content;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.todo-item.overdue {
+  color: #a52a2a; /* Maroon */
+  font-weight: bold;
+}
+
+/* Optional: overdue tasks */
+.overdue {
+  color: maroon;
+  font-weight: bold;
+}
+
+/* Strikethrough for completed tasks */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: gray;
+}
+
+#logoutBtn {
+  display: block; /* Makes the button take a block space */
+  margin-top: 15px; /* Space between form and button */
+  margin-left: auto; /* Push it to the right */
+  margin-right: 0; /* Ensures right alignment */
+  padding: 8px 16px; /* Nice padding */
+  background-color: #f44336; /* Red color for logout */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#logoutBtn:hover {
+  background-color: #d32f2f; /* Darker on hover */
+}

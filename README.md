@@ -14,22 +14,16 @@ git clone  https://github.com/AdakingMary/WTF-MiniProject2-Todo-List-App-.git
 
 cd WTF Todo List App
 
-3. Install dependencies
+3. Start the application
 
-npm install
-
-4. Start the application
-
-npm start
-
-5. Open in your browser
+4. Open in your browser
 
 http://127.0.0.1:5500/
 
 ---
 
 ## Technologies Used
--html
+- Html
 - JavaScript
 - CSS
 - Xano API (Backend)
